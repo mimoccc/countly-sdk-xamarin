@@ -1,0 +1,5 @@
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.pdb
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.dll
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.pdb

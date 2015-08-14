@@ -1,0 +1,2 @@
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin.WinPhone\countly_sdk_xamarin.WinPhone.csproj;neutral
+C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\countly_sdk_xamarin.csproj;neutral
