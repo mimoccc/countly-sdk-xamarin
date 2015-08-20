@@ -1,5 +1,14 @@
-C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.dll
-C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.pdb
-C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.csprojResolveAssemblyReference.cache
-C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.dll
-C:\Users\Alexander\Documents\Visual Studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.pdb
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.dll
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.pdb
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.dll
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.pdb
+C:\Users\Alexander\documents\visual studio 2015\Projects\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.csprojResolveAssemblyReference.cache
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.dll
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\countly_sdk_xamarin.pdb
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.dll
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.pdb
+E:\GitHub\countly-sdk-xamarin\countly-sdk-xamarin\countly_sdk_xamarin\obj\Debug\countly_sdk_xamarin.csprojResolveAssemblyReference.cache

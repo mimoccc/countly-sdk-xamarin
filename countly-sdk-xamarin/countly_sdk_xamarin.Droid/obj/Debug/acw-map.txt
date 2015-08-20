@@ -1,0 +1,4 @@
+countly_sdk_xamarin.Droid.MainActivity, countly_sdk_xamarin.Droid;md59d4639cd301a54f15de1c3751133fb8e.MainActivity
+countly_sdk_xamarin.Droid.MainActivity, countly_sdk_xamarin.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59d4639cd301a54f15de1c3751133fb8e.MainActivity
+countly_sdk_xamarin.Droid.MainActivity;md59d4639cd301a54f15de1c3751133fb8e.MainActivity
+countly_sdk_xamarin.droid.MainActivity;md59d4639cd301a54f15de1c3751133fb8e.MainActivity
