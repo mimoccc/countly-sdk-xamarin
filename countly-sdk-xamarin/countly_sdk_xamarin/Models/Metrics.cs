@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel.Channels;
+using Xamarin.Forms;
 
 namespace countly_sdk_xamarin.Models
 {
-    class Metrics
+    public class Metrics
     {
         public string _os { get; set; }
         public string _os_version { get; set; }
@@ -17,5 +15,49 @@ namespace countly_sdk_xamarin.Models
         public string _density { get; set; }
         public string _locale { get; set; }
         public string _store { get; set; }
+
+        private void CollectMetrics()
+        {
+            //Device.OnPlatform(
+            //    Android: () =>
+            //    {
+            //        _os = "Android";
+            //        _os_version = "";
+            //        _device = "";
+            //        _resolution = "";
+            //        _carrier = "";
+            //        _app_version = "";
+            //        _density = "";
+            //        _locale = "";
+            //        _store = "";
+            //    },
+            //    WinPhone: () =>
+            //    {
+            //        _os = "Android";
+            //        _os_version = "";
+            //        _device = "";
+            //        _resolution = "";
+            //        _carrier = "";
+            //        _app_version = "";
+            //        _density = "";
+            //        _locale = "";
+            //        _store = "";
+            //    },
+            //    iOS: () =>
+            //    {
+            //        _os = "iOS";
+            //        _os_version = Device.;
+            //        _device = "";
+            //        _resolution = "";
+            //        _carrier = "";
+            //        _app_version = "";
+            //        _density = "";
+            //        _locale = "";
+            //        _store = "";
+            //    }
+            //    );
+            _os = Device.OS.ToString();
+        }
+
     }
 }

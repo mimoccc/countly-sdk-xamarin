@@ -1,35 +1,95 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using countly_sdk_xamarin.Models;
 using Newtonsoft.Json;
+using Xamarin.Forms;
 
 namespace countly_sdk_xamarin.Services
 {
     public class RequestService
     {
-        public static string toJSON<TemplateType>(TemplateType someObject)
+        private void FirstRequest()
         {
-            var json = JsonConvert.SerializeObject(someObject);
-            return json;
+
         }
 
-        public static TemplateType eventFromJSON<TemplateType>(string json)
+        private void LastRequest()
         {
-            var newEvent = JsonConvert.DeserializeObject<TemplateType>(json);
-            return newEvent;
+            
         }
 
-        public static async Task GetServerData(string Url)
+        int GetSessionDuration()
         {
-            string result = await RequestService.MakeInitRequest(Url);
-            InitResponse model = Newtonsoft.Json.JsonConvert.DeserializeObject<InitResponse>(result);
-            Debug.Assert(model.result == "Success");
+            TimeSpan duration = lastRequestTime - DateTime.Now;
+            return duration.Seconds;
         }
 
-        public static async Task<string> MakeInitRequest(string url)
+        private string requestUrl;
+        
+        private static DateTime lastRequestTime;
+        private int requestDelay;
+        private bool successPush;
+
+
+        private Queue<Event> currentEvents;
+
+        public RequestService(string Url)
+        {
+            // Setting configures
+            
+            successPush = false; // check if last push were successfull
+            requestDelay = 60; // setting delay time of requests - 60 seconds
+
+            requestUrl = Url; // setting request URL
+            TimeSpan time = new TimeSpan(0, 0, requestDelay);
+
+            FirstRequest();
+            Device.StartTimer(time, StartRequestProcessor); // starting processor
+        }
+
+        private bool StartRequestProcessor()
+        {
+            GetServerData();
+            return true;
+        }
+
+        public async Task GetServerData()
+        {
+            if (EventService.Instance.EventCount != 0)
+            {
+                requestUrl += CreateEventJSONPack();
+            }
+            var result = await Task.Run(() => MakeRequest(requestUrl));
+            InitResponse model = JsonConvert.DeserializeObject<InitResponse>(result);
+            //Debug.Assert(model.result == "Success");
+
+            if (model.result == "Success") successPush = true;
+            else successPush = false;
+
+            
+        }
+
+        private string CreateEventJSONPack()
+        {
+            int avalableEvents = EventService.Instance.EventCount > 10 ? 10 : EventService.Instance.EventCount;
+
+            currentEvents = EventService.Instance.GetEvents(avalableEvents);
+
+            string eventJSON = String.Empty;
+
+            for (int i = 0; i < avalableEvents; i++)
+            {
+                eventJSON += toJSON(currentEvents.Dequeue());
+            }
+
+            return eventJSON;
+        }
+
+        public static async Task<string> MakeRequest(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.ContentType = "text/html";
@@ -46,6 +106,18 @@ namespace countly_sdk_xamarin.Services
                 respStream = null;
                 return strContent;
             }
+        }
+
+        public static string toJSON<TemplateType>(TemplateType someObject)
+        {
+            var json = JsonConvert.SerializeObject(someObject);
+            return json;
+        }
+
+        public static TemplateType eventFromJSON<TemplateType>(string json)
+        {
+            var newEvent = JsonConvert.DeserializeObject<TemplateType>(json);
+            return newEvent;
         }
     }
 }

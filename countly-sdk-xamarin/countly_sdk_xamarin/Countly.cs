@@ -6,6 +6,7 @@ namespace countly_sdk_xamarin
 {
     public class Countly
     {
+        #region Singleton
         private Countly() { }
         private static Countly instance;
         public static Countly Instance
@@ -17,6 +18,7 @@ namespace countly_sdk_xamarin
                 return instance;
             }
         }
+        #endregion
 
         private Parameters param;
         private string ServerUrl;
@@ -42,7 +44,7 @@ namespace countly_sdk_xamarin
 
             var RequestUrl = Url + "i?" + param.GetParams();//JsonConvert.SerializeObject(param);
             // debug value
-            /*var debugResult = */RequestService.GetServerData(RequestUrl);
+            /*var debugResult = */RequestService ReqService = new RequestService(RequestUrl);
             //Debug.Assert(debugResult.Result.result == "success");
         }
 
@@ -57,5 +59,10 @@ namespace countly_sdk_xamarin
         //private void init()
         //{
         //}
+
+        private void FinishCountly()
+        {
+            
+        }
     }
 }
