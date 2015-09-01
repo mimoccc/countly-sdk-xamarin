@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+using SQLite;
 
 namespace countly_sdk_xamarin.Models
 {
@@ -14,6 +11,9 @@ namespace countly_sdk_xamarin.Models
         private static readonly string COUNT_KEY = "count";
         private static readonly string SUM_KEY = "sum";
         private static readonly string TIMESTAMP_KEY = "timestamp";
+
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
 
         public string key;
         public Dictionary<String, String> segmentation;
