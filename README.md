@@ -7,14 +7,13 @@ usage and end-user behavior. There are two parts of Countly: [the server that co
 
 This repository includes the Countly Xamarin SDK. It has support for the following: 
 
-* Basic analytics
+* Mobile analytics
 * Push notifications
+* Referral tracking
+* Crash reporting
+* User profiles
 
-Upcoming features:
-
-* Referral tracking (September 15)
-* Crash reports (September 15)
-* User profiles (September 15)
+Get [Xamarin SDK installation instructions here](http://resources.count.ly/docs/countly-sdk-for-xamarin).
 
 ### Other Github resources ###
 
