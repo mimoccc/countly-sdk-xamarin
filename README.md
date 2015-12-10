@@ -5,6 +5,8 @@ usage and end-user behavior. There are two parts of Countly: [the server that co
 
 ##About Xamarin SDK
 
+**NOTE: This repository is not complete and SDK may not work. Use at your own risk**
+
 This repository includes the Countly Xamarin SDK. It has support for the following: 
 
 * Mobile analytics
