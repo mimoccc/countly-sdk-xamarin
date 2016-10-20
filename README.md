@@ -16,8 +16,8 @@ This is how you can do it:
 
 Here are corresponding iOS and Android SDK guides: 
 
-* https://developer.xamarin.com/guides/ios/advanced_topics/binding_ob...
-* https://developer.xamarin.com/guides/android/advanced_topics/bindin...
+* https://developer.xamarin.com/guides/ios/advanced_topics/binding_objective-c/
+* https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/
 
 ### Other Github resources ###
 
