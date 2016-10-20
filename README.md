@@ -5,17 +5,19 @@ usage and end-user behavior. There are two parts of Countly: [the server that co
 
 ##About Xamarin SDK
 
-**NOTE: This repository is not complete and SDK may not work. Use at your own risk**
+We have decided to **discontinue Xamarin SDK**, because Xamarin provides a good binding feature for Objective-C and Java. This makes a perfect option to use Countly's stable SDKs inside a Xamarin app. 
 
-This repository includes the Countly Xamarin SDK. It has support for the following: 
+This is how you can do it:
 
-* Mobile analytics
-* Push notifications
-* Referral tracking
-* Crash reporting
-* User profiles
+1. Create binding projects in Xamarin for Android (and/or) iOS
+2. Use Xamarin IDE to import the Countly SDK (same for the Android project)
+3. Xamarin creates the binding definitions. Tweak the definition.
+4. Build and you now have a Xamarin SDK for iOS/Android to be used to send data to Countly.
 
-Get [Xamarin SDK installation instructions here](http://resources.count.ly/docs/countly-sdk-for-xamarin).
+Here are corresponding iOS and Android SDK guides: 
+
+* https://developer.xamarin.com/guides/ios/advanced_topics/binding_ob...
+* https://developer.xamarin.com/guides/android/advanced_topics/bindin...
 
 ### Other Github resources ###
 
